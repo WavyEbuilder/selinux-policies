@@ -1,0 +1,1 @@
+(allow nsswitch_domain systemd_machined_t (unix_stream_socket (connectto)))

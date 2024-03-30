@@ -1,0 +1,1 @@
+(allow unconfined_t gkeyringd_exec_t (file (entrypoint)))

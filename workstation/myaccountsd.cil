@@ -1,0 +1,4 @@
+(dontaudit accountsd_t default_t search_dir)
+(allow accountsd_t systemd_unit_t search_dir) (allow accountsd_t systemd_unit_t read_lnk_file)
+(allow accountsd_t flatpak_var_lib_t search_dir)
+(allow accountsd_t unconfined_t (dbus (send_msg)))

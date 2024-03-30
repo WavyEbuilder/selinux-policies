@@ -1,0 +1,7 @@
+(type power_profilesd_var_lib_t) (typeattributeset file_type power_profilesd_var_lib_t) (typeattributeset non_auth_file_type power_profilesd_var_lib_t) (typeattributeset non_security_file_type power_profilesd_var_lib_t)
+(filecon "/var/lib/power-profiles-daemon" dir (system_u object_r power_profilesd_var_lib_t ((s0)(s0)))) (filecon "/var/lib/power-profiles-daemon/.*" any (system_u object_r power_profilesd_var_lib_t ((s0)(s0))))
+(roletype object_r power_profilesd_var_lib_t)
+(allow power_profilesd_t power_profilesd_var_lib_t manage_dir)(allow power_profilesd_t power_profilesd_var_lib_t manage_file)
+(allow power_profilesd_t var_lib_t addname_dir)(typetransition power_profilesd_t var_lib_t dir power_profilesd_var_lib_t)
+(allow power_profilesd_t sysfs_t (dir (watch)))
+(dontaudit power_profilesd_t self (capability (net_admin)))

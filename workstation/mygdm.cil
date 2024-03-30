@@ -1,0 +1,1 @@
+(allow xdm_t init_t (system (status)))

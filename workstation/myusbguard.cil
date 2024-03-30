@@ -1,0 +1,2 @@
+(allow usbguard_t proc_t (file (getattr open read)))
+(typeattributeset nsswitch_domain usbguard_t)

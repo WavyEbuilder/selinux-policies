@@ -1,0 +1,1 @@
+(allow devicekit_disk_t initrc_t (dbus (send_msg)))

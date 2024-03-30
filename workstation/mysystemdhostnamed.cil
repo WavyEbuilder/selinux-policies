@@ -1,0 +1,2 @@
+(allow systemd_hostnamed_t xdm_t (dbus (send_msg)))
+(allow systemd_hostnamed_t unconfined_t (dbus (send_msg)))

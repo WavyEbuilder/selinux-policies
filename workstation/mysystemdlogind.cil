@@ -1,0 +1,1 @@
+(allow systemd_logind_t xdm_t (fd (use)))

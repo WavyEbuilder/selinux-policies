@@ -1,0 +1,2 @@
+(allow systemd_tmpfiles_t security_t (lnk_file (getattr)))
+(allow systemd_tmpfiles_t unlabeled_t (dir (getattr)))

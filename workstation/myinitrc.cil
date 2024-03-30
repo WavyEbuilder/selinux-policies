@@ -1,0 +1,1 @@
+(allow initrc_t unconfined_t (dbus (send_msg)))

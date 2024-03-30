@@ -1,0 +1,3 @@
+(allow systemd_locale_t systemd_runtime_notify_t writeinherited_sock_file) (allow systemd_locale_t usr_t list_dir)
+(allow systemd_locale_t unconfined_t (dbus (send_msg)))
+(allow systemd_locale_t xdm_t (dbus (send_msg)))

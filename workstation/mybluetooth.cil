@@ -1,0 +1,1 @@
+(allow bluetooth_t xdm_t (dbus (send_msg)))

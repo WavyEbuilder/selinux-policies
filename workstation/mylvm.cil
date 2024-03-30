@@ -1,0 +1,1 @@
+(allow lvm_t initrc_t (sem (associate getattr read unix_read unix_write write)))

@@ -1,0 +1,1 @@
+(allow system_dbusd_t bluetooth_t (bluetooth_socket (read write)))

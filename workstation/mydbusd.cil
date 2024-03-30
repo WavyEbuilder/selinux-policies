@@ -1,0 +1,3 @@
+(allow system_dbusd_t xdg_data_t readinherited_file) (allow system_dbusd_t unconfined_t (fd (use)))
+(allow system_dbusd_t bluetooth_t (bluetooth_socket (read write)))
+(allow system_dbusd_t initrc_t (unix_stream_socket (read write)))

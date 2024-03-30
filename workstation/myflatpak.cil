@@ -1,0 +1,8 @@
+(type flatpak_var_lib_t)
+(typeattributeset file_type flatpak_var_lib_t)
+(typeattributeset non_auth_file_type flatpak_var_lib_t)
+(typeattributeset non_security_file_type flatpak_var_lib_t)
+(filecon "/var/lib/flatpak" dir (system_u object_r flatpak_var_lib_t ((s0)(s0))))
+(filecon "/var/lib/flatpak/.*" any (system_u object_r flatpak_var_lib_t ((s0)(s0))))
+(roletype object_r flatpak_var_lib_t)
+(typetransition unconfined_t var_lib_t dir "flatpak" flatpak_var_lib_t)

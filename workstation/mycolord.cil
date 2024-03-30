@@ -1,0 +1,3 @@
+(allow colord_t flatpak_var_lib_t list_dir) (allow colord_t flatpak_var_lib_t read_file) (allow colord_t flatpak_var_lib_t (file (map)))
+(allow colord_t xdm_var_lib_t (file (map)))
+(allow colord_t unconfined_t (fd (use)))

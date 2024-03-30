@@ -1,0 +1,1 @@
+(allow kmod_t user_tmp_t read_lnk_file)

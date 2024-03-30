@@ -1,0 +1,2 @@
+(allow devicekit_disk_t mount_runtime_t (dir (watch)))
+(allow devicekit_disk_t lvm_runtime_t manage_dir) (allow devicekit_disk_t lvm_runtime_t manage_file) (typetransition devicekit_disk_t var_run_t dir "cryptsetup" lvm_runtime_t) (allow devicekit_disk_t var_run_t addname_dir)

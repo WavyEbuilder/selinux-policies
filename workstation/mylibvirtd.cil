@@ -1,0 +1,5 @@
+(allow virt_leaseshelper_t sysctl_kernel_t search_dir) (allow virt_leaseshelper_t sysctl_kernel_t read_file)
+(allow virt_leaseshelper_t proc_t (filesystem (getattr)))
+(allow virtd_t xdg_downloads_t list_dir)(allow virtd_t xdg_downloads_t read_file)
+(allow virtd_t initrc_t (dbus (send_msg))) ;; firewalld
+(allow virtd_t initrc_t (dbus (send_msg))) ;; firewalld

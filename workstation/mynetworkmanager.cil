@@ -1,0 +1,6 @@
+(dontaudit NetworkManager_t default_t search_dir)
+(allow NetworkManager_t systemd_sessions_runtime_t (dir (watch))) (allow NetworkManager_t systemd_logind_runtime_t (dir (watch))) (allow NetworkManager_t systemd_machined_runtime_t (dir (watch)))
+(filecon "/usr/lib/NetworkManager/dispatcher\.d/pre-up\.d/.*" file (system_u object_r bin_t ((s0)(s0))))
+(allow NetworkManager_t systemd_hwdb_t read_file)
+(allow NetworkManager_t systemd_hwdb_t (file (map)))
+(allow NetworkManager_t NetworkManager_var_lib_t (dir (watch watch_reads)))

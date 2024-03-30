@@ -1,0 +1,4 @@
+(allow kernel_t self (capability2 (checkpoint_restore)))
+(allow plymouthd_t init_t (process (signal)))
+(allow plymouthd_t udev_runtime_t (dir (search)))
+(allow plymouthd_t self (netlink_kobject_uevent_socket (create)))

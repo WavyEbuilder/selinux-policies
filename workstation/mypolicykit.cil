@@ -1,0 +1,2 @@
+(allow policykit_t init_t (system (status)))
+(allow policykit_t systemd_user_manager_unit_t (service (status)))

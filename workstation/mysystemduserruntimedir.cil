@@ -1,0 +1,7 @@
+(allow systemd_user_runtime_dir_t user_tmp_t (blk_file (getattr unlink)))
+(allow systemd_user_runtime_dir_t user_tmp_t (chr_file (getattr unlink)))
+(allow systemd_user_runtime_dir_t user_tmp_t (fifo_file (getattr unlink)))
+(allow systemd_user_runtime_dir_t user_tmp_t (file (getattr unlink)))
+(allow systemd_user_runtime_dir_t user_tmp_t (lnk_file (getattr unlink)))
+(allow systemd_user_runtime_dir_t user_tmp_t (sock_file (getattr unlink)))
+(allow systemd_user_runtime_dir_t pulseaudio_tmp_t delete_dir) (allow systemd_user_runtime_dir_t pulseaudio_tmp_t delete_file)
