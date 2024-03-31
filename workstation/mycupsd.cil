@@ -1,2 +1,2 @@
-(allow cupsd_config_t system_dbusd_t (unix_stream_socket (read) (write)))
+(allow cupsd_config_t system_dbusd_t (unix_stream_socket (read write)))
 (dontaudit cupsd_t default_t search_dir)
